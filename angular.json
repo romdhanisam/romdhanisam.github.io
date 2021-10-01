@@ -22,7 +22,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -31,37 +30,20 @@
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/tether/dist/css/tether.min.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/vender/css/normalize.css",
-              "src/styles/vender/css/owl.css",
-              "src/styles/vender/css/animate.css",
-              "src/styles/vender/fonts/eleganticons/et-icons.css",
-              "src/styles/vender/css/samirromdhani.css",
-              "src/styles/vender/css/bootstrap.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "./node_modules/tether/dist/js/tether.min.js",
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/styles/vender/js/jquery-1.11.1.min.js",
-              "src/styles/vender/js/owl.carousel.min.js",
-              "src/styles/vender/js/bootstrap.min.js",
-              "src/styles/vender/js/wow.min.js",
-              "src/styles/vender/js/typewriter.js",
-              "src/styles/vender/js/jquery.onepagenav.js",
-              "src/styles/vender/js/main.js",
-              "src/styles/vender/js/froala/froala_editor.pkgd.min.js",
-              "src/styles/vender/js/froala/fabric.min.js",
-              "src/styles/vender/js/froala/tui-code-snippet.min.js",
-              "src/styles/vender/js/froala/tui-image-editor.min.js",
-              "src/styles/vender/js/froala/image_tui.min.js",
-              "src/styles/vender/js/froala/font_awesome.min.js",
-              "src/styles/vender/js/froala/fontawesome.min.js",
-              "src/styles/vender/js/froala/brands.min.js",
-              "src/styles/vender/js/froala/solid.min.js",
-              "src/styles/vender/js/froala/v4-shims.min.js"
-            ]
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -74,7 +56,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -92,7 +73,8 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
