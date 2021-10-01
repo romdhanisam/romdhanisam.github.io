@@ -1,0 +1,14 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
