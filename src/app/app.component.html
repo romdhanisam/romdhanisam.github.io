@@ -2,10 +2,214 @@
   <div class="col-12">
     <app-header></app-header>
   </div>
-</div>
-<div class="row">
   <div class="col-12">
-      <router-outlet></router-outlet>
+      <!-- <router-outlet></router-outlet> -->
+		<section class="tabs">
+        <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked"/>
+        <label for="tab-1" class="tab-label-1">About</label>
+
+        <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+        <label for="tab-2" class="tab-label-2">EXPERIENCE</label>
+	           
+        <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+        <label for="tab-3" class="tab-label-3">EDUCATION</label>
+  
+        <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4"/>
+        <label for="tab-4" class="tab-label-4">SKILLS</label>
+        
+        <input id="tab-5" type="radio" name="radio-set" class="tab-selector-5"/>
+        <label for="tab-5" class="tab-label-5">CERTIFICATIONS</label>
+
+        <input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
+        <label for="tab-6" class="tab-label-6">PROJECTS</label>
+        
+        
+			    <div class="clear-shadow"></div>
+				
+		        <div class="content">
+			        <div class="content-1">
+              <!-- <h2>About us</h2> -->
+              <p>
+              I'm a software engineer graduated from National School of Computer Science (Ecole Nationale des Sciences 
+              de l’Informatique, ENSI) living in Paris, France.<br/>
+              </p>
+              <p>
+                I’m passionate about technology.
+              </p>
+              <p>
+                My major focus is on JAVA, Angular, full-stack development 
+                and I still keep an eye out for tde DevOps approach, docker platform Kubernetes 
+                and tools tdat manage any cloud, infrastructure, or service mainly Terraform.
+              </p>
+              <!-- <h3>How we work</h3>
+              <p>Like you, I used to tdink tde world was tdis great place where everybody lived by tde same standards I did, tden some kid witd a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. tdat's Cesar's world, and if you're not willing to play by his rules, tden you're gonna have to pay tde price. </p> -->
+				    </div>
+
+			      <div class="content-2">
+              <h3>WORK EXPERIENCE</h3>
+              <!-- <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt witd my name printed on it? Do you see a little Asian child witd a blank expression on his face sitting outside on a mechanical helicopter tdat shakes when you put quarters in it? No? Well, tdat's what you see at a toy store. And you must tdink you're in a toy store, because you're here shopping for an infant named Jeb.</p> -->
+				    </div>
+
+			      <div class="content-3">
+              <h3>EDUCATION</h3>
+              <ng-container>
+                <!-- <ng-container class="flex-shrink-0"><span class="text-primary"><strong>2013-2016</strong></span></ng-container> -->
+                <ng-container>
+                  <p class="mb-0">
+                    <ng-container>
+                      <h5>École Nationale des Sciences de l’Informatique</h5>
+                      <span class="text-info">
+                        Diplôme d’Ingénieur Informatique
+                      </span>
+                      </ng-container>
+                  </p>
+                </ng-container>
+              </ng-container><br/>
+              <ng-container>
+                <!-- <ng-container class="flex-shrink-0"><span class="text-primary"><strong>2011-2013</strong></span></ng-container> -->
+                <p class="mb-0">
+                  <ng-container>
+                    <h5>Institut Préparatoire aux Etudes d’ingénieurs de Nabeul</h5>
+                    <span class="text-info">
+                      Cycle Préparatoire
+                    </span>
+                  </ng-container>
+                </p>
+              </ng-container><br/>
+              <ng-container>
+                <!-- <ng-container class="flex-shrink-0"><span class="text-primary"><strong>2011</strong></span></ng-container> -->
+                <p class="mb-0">
+                  <ng-container class="flex-shrink-0">
+                    <h5>Lycée Rakkada</h5>
+                    <span class="text-info">
+                      Baccalauréat Scientifique
+                    </span>
+                    </ng-container>
+                </p>
+              </ng-container> 
+				    </div>
+
+				    <div class="content-4">
+              <h3>SKILLS</h3>
+              <table @blub  class="table table-hover" >
+                <tbody>
+                  <tr>
+                    <td scope="col">Frameworks</td>
+                    <td scope="col">Angular2+, Spring, Hibernate</td>
+                  </tr>
+                  <tr>
+                    <td scope="col">Test</td>
+                    <td scope="col">Junit, Mockito, Wiremock, SoapUI</td>
+                  </tr>
+                  <tr>
+                    <td scope="col">
+                      Langages de programmation<br/>
+                      &nbsp;
+                    </td>
+                    <td scope="col">
+                      Front office: Javascript, Typescript<br/>
+                      Back office: Java
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">
+                      <strong>Automatisation</strong>
+                      <br/>
+                      <br/>
+                      Build Tools<br/>
+                      CI<br/>
+                      Code Quality<br/>
+                      Orchestration<br/>
+                      IaC<br/>
+                    </td>
+                    <td scope="col">
+                      <br/>
+                      <br/>
+                      Maven, npm, gruntJS, Docker<br/>
+                      Jenkins, Gitlab-ci<br/>
+                      SonarQube<br/>
+                      Kubernetes, Docker Swarm<br/>
+                      Terraform
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">SGBD</td>
+                    <td scope="col">
+                      MYSQL, Oracle Database 10g, SQL*Plus, MondoDB, Postgres
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">Aide à la conception</td>
+                    <td scope="col">UML</td>
+                  </tr>
+                  <tr>
+                    <td scope="col">IDE</td>
+                    <td scope="col">
+                      Eclipse, Intellij, VS Code
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">OS</td>
+                    <td scope="col">
+                      Linux, Windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">Autres connaissances</td>
+                    <td scope="col">
+                      Git, RESTFUL Web Service
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what tde dangers are. But tden why fifty years in tde future when tde spacecraft encounters a black hole does tde computer call it an 'unknown entry event'? Why don't tdey know? If tdey don't know, tdat means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic.</p>
+              <h3>Get in touch</h3>
+              <p>Well, tde way tdey make shows is, tdey make one show. tdat show's called a pilot. tden tdey show tdat show to tde people who make shows, and on tde strengtd of tdat one show tdey decide if tdey're going to make more shows. Some pilots get picked and become television programs. Some don't, become notding. She starred in one of tde ones tdat became notding. </p> -->
+				    </div>
+            <div class="content-5">
+              <h3>ACHIEVEMENTS & CERTIFICATION</h3>
+              <ng-container>
+                <ng-container>
+                  <p class="mb-0">
+                    <ng-container>
+                      <h5>2021</h5>
+                      <span class="text-info">
+                        Certified Kubernetes Administrator CKA
+                      </span>
+                      </ng-container>
+                  </p>
+                </ng-container>
+              </ng-container><br/>
+              <ng-container>
+                <ng-container>
+                  <p class="mb-0">
+                    <ng-container>
+                      <h5>2020</h5>
+                      <span class="text-info">
+                        Certified Kubernetes Application Developer CKAD
+                      </span>
+                      </ng-container>
+                  </p>
+                </ng-container>
+              </ng-container><br/>
+              <ng-container>
+                <ng-container>
+                  <p class="mb-0">
+                    <ng-container>
+                      <h5>2019</h5>
+                      <span class="text-info">
+                        Oracle Certified Associate, Java SE 8 Programmer 1Z0-808
+                      </span>
+                      </ng-container>
+                  </p>
+                </ng-container>
+              </ng-container>
+            </div>
+            <div class="content-6">
+              <h3>PERSONAL PROJECTS</h3>
+            </div>
+		        </div>
+			</section>
     </div>
 </div>
 <div class="row">

@@ -30,13 +30,15 @@
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/tether/dist/css/tether.min.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles/views/css/style.scss"
             ],
             "scripts": [
               "./node_modules/tether/dist/js/tether.min.js",
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/styles/js/modernizr.custom.04022.js"
             ],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -65,11 +67,6 @@
                   "type": "initial",
                   "maximumWarning": "6mb",
                   "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
                 }
               ]
             }
