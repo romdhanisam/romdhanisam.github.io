@@ -1,0 +1,99 @@
+site_name: Samir Romdhani - Full Stack Developer | Open Source Enthusiast
+site_author: Samir Romdhani
+site_url: "https://romdhanisam.github.io/"
+#repo_url: "https://romdhanisam.github.io/"
+#repo_name: "romdhanisam/romdhanisam.github.io"
+docs_dir: docs
+site_dir: public
+
+nav:
+  - About: index.md
+  - Work experience: experiences.md
+  - Education: education.md
+  - Certifications: certifications.md
+  - Contributions: contributions.md
+  - Skills: skills.md
+  - Projects: projects.md
+#  - Articles: articles.md
+
+theme:
+  name: material
+  locale: en
+  favicon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/materialformkdocs.svg
+  custom_dir: docs/overrides
+  features:
+    - toc.integrate
+    - navigation.tabs
+    - navigation.footer
+
+plugins:
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+  - include-markdown
+  - search
+  - i18n:
+      docs_structure: suffix
+      default_language: en
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          site_name: "Samir Romdhani | Ingénieur d'études et développement"
+          nav_translations:
+            About: Profil
+            Work experience: Expériences
+            Education: Éducation
+            Contributions: Réalisations
+            Projects: Projets
+            Certifications: Certifications
+            Skills: Compétences
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - attr_list
+  - footnotes
+  - neoteroi.timeline
+  - neoteroi.cards
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - md_in_html
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      linenums_style: pymdownx.inline
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+extra_css:
+  - assets/css/extra.css
+  - assets/css/neoteroi-cards.css
+  - assets/css/neoteroi-mkdocs.css
+extra_javascript:
+  - assets/js/extra.js
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/romdhanisam
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/samirromdhani
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/romdhanisamir
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/samirromdhani/
+#    - icon: fontawesome/brands/leetcode
+#      link: https://leetcode.com/samirromdhani
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@romdhanisam
+    - icon: fontawesome/brands/wordpress
+      link: https://romdhanisamir.wordpress.com

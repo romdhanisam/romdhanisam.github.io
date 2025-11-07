@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block announce %}
+<!--<aside class="banner">-->
+<!--    <p style="display:inline;">TEXT GOES HERE!</p>-->
+<!--</aside>-->
+{% endblock %}
