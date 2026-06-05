@@ -7,4 +7,4 @@ mkdocs-material-extensions
 neoteroi-mkdocs>1.0.3
 pymdown-extensions
 mkdocs-include-markdown-plugin
-mkdocs-static-i18n==v1.3.0
+mkdocs-static-i18n>v1.3.0
